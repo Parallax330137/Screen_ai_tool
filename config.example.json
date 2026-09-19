@@ -1,0 +1,28 @@
+{
+  "hotkey": "`",
+  "gemini_api_key": "",
+  "gemini_api_keys": [
+    "YOUR_GEMINI_API_KEY_HERE"
+  ],
+  "model_name": "gemini-3.6-flash",
+  "model_names": [
+    "gemini-3.6-flash",
+    "gemini-3.5-flash",
+    "gemini-3.7-flash",
+    "gemini-3.8-flash",
+    "gemini-flash-latest"
+  ],
+  "prompt": "Answer what's on screen concisely, in plain language. Do not use LaTeX, markdown, or symbolic math notation (no \\frac, ^, _, $ signs) - write math out in words or simple Unicode characters instead, e.g. 'x squared plus 2' or 'x2 + 2'.",
+  "position": "bottom-center",
+  "margin": 60,
+  "max_width": 700,
+  "font_family": "Segoe UI",
+  "font_size": 12,
+  "bg_color": "#111111",
+  "text_color": "#ffffff",
+  "alpha": 0.92,
+  "corner_radius": 18,
+  "mode": "box",
+  "annotate_prompt": "Look at this screen. Identify the important regions (tabs, images, code lines, text blocks, buttons, panels). For EACH region return a short explanation of what it is or what it does.\nReturn ONLY a JSON array, no markdown fences, no preamble. Each element:\n{\"box_2d\": [ymin, xmin, ymax, xmax], \"label\": \"short explanation\"}\nCoordinates are normalized 0-1000 relative to the image (y first, then x). Keep each label under 90 characters. Return at most 14 elements. No LaTeX or markdown in labels.",
+  "annotate_font_size": 10
+}

@@ -1,0 +1,4 @@
+pynput
+mss
+pillow
+google-generativeai
